@@ -73,10 +73,20 @@ namespace Attendance.Migrations
 }
 
 --------------------------------------week 10--------------------------------------------------
------------Login Page--------------
-{
-    ViewBag.Title = "Home Page";
-}
+
+<div>
+    @{
+        if (@Model.extra != "" && @Model.extra != null)
+        {
+            ViewBag.data = @Model.extra;
+            <center class="alert alert-info">@Model.extra<a class='close' data-dismiss='alert'>&times;</a></center>
+        }
+    }
+    <div class="content container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-xs-3">
+                <h4 class="page-title">Home Page</h4>
+            </div>
 
 <div class="account-page">
     @{
