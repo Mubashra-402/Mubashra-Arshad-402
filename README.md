@@ -73,9 +73,8 @@ namespace Attendance.Migrations
 }
 
 --------------------------------------week 10--------------------------------------------------
-@using Attendance.Models
-@model Attendance.Models.User
-@{
+-----------Login Page--------------
+{
     ViewBag.Title = "Home Page";
 }
 
